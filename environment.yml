@@ -1,0 +1,12 @@
+name: SpringBoardCapstone
+channels:
+  - defaults
+  - pypi
+  - conda-forge
+dependencies:
+  - python=3.6
+  - tensorflow=1.15.0
+  - bert-tensorflow=1.0.1
+  - absl-py
+  - pandas
+  - flask
