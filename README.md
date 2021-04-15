@@ -1,5 +1,5 @@
 # FinalCapstone
-Project Goal:
+**Project Goal:**
 
 After concluding a project that enabled me to complete a neural translation machine and also implement a word2Vec neural network, I decided to deepen my Natural Language programming skills as part of my Springboard Capstone Project.
 
@@ -18,7 +18,7 @@ Next Steps: After this the development of a web portal to enable users key in fr
 
 
 
-TF IDF Model:
+**TF IDF Model:**
 
 The following steps were concluded as part of the development of the TF IDF model:
 
@@ -40,7 +40,7 @@ The beauty of the TF IDF model was that it was relatively accurate whilst simple
 The model was implemented using the Scikit learn library and the accuracy was 99% on the average
 
 
-LSTM Model:
+**LSTM Model:**
 
 The following steps were taken as part of this model development
 
@@ -52,7 +52,7 @@ The accuracy was less than that of the TFIDF model at 98.6%
 
 
 
-BERT MODEL:
+**BERT MODEL:**
 
 The following steps were taken as part of this model development
 
@@ -67,7 +67,7 @@ Next steps:
 Try to deploy BERT model to mobile android device
 
 
-Project Considerations
+**Project Considerations**
 
 Major Components of the System
 	The major components of my system are the models and the api. In a perfect world, I would also put up a web interface.
@@ -75,14 +75,15 @@ Major Components of the System
 System Input and Output
 The input is the text input from the user. The out is the prediction
 
-Data Storage
+
+**Data Storage**
 In a perfect world where there is a web interface or app and customers are using the interface or app daily, then the data would be stored in a database. In this case, there is no need for data storage
 
 How will data get from one component of the system to another? Data would move from database to model and from model to app via api calls implemented using flask
 
 
 
-Model LifCycle
+**Model LifCycle**
 How frequently do you need to retrain your model? Is it at fixed intervals when you collect a certain amount of new data or when some other conditions are met? 
 
 If the model was to be implemented in real life, one of the key aspects would be the ability of users to confirm/ identify whether a comment is toxic or not. This would provide new data for training but more importantly, data that can be used to monitor the model and determine drift or loss of accuracy.
@@ -103,16 +104,20 @@ How will the retrained model be deployed? ○ How will the retrained model be st
 
 The retrained model would be stored the same way the current model is stored - as a joblib model, stored in a docker container which would be run within a virtual environment
 
-Model Monitoring
+
+**Model Monitoring**
 There would be a feedback loop whereby users confirm the validity of the predictions. This validity would be stored in the database. Every day, the accuracy and F1 scores would be calculated to confirm that the model is still maintaining its accuracy.
 
 Also it should be monitored for bugs and other performance issues. 
 
-Response to Outages
+
+
+**Response to Outages**
 
 The response to both GET and POST requests would have a code for out of service that would enable users to know when the system is out. It is a simple system and its points of potential failure are not many.
 
-System Tools? 
+
+**System Tools? **
 
 Tools and technology used include - python script, environment yml, dockerfile, flask app
 
