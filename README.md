@@ -90,11 +90,15 @@ If the model was to be implemented in real life, one of the key aspects would be
 
 The model would be retrained with the new data weekly or monthly depending on the amount of data collected and the number of predictions required
 
+
+
 What kind of data do you need for retraining? How will you store and manage it? 
 
 As detailed adobe, labelled data obtained from user confirming the validity of predictions would be used for retraining
 
 This data would be stored in a database and retrieved from the database when needed.
+
+
 
 How do you know if the retrained model is good enough to deploy? 
 
